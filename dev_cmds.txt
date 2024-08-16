@@ -1,4 +1,6 @@
 # Notes file to remember what commands are used to get development started
+## Check here: https://github.com/BillRaymond/my-jekyll-docker-website
+
 
 # Set up docker by creating a dockerfile with similar contents provided here
 # Start using contain by running the command in VS Code using 'Crtl-shift-P'
@@ -27,3 +29,53 @@
 ## Edit the '_config.yml' file and update the 'baseurl' and 'url' variables
 ### baseurl='<project_name>'
 ### url='https://otlighthouse'
+## Commit and push to Github
+## Make sure that Github Pages for the project is pointing to the gh-pages branch.
+## Browse to the domain
+
+# Closing out 
+## Do not leave the Docker container running
+## Hit ctrl-shift-p and type 'close remote connection'
+### This will stop the container AND close out of the project in VS Code
+## To start again use ctrl-shift-p and type 'open folder in container'
+## Navigate to the project directory and select okay
+### This will start the container and VS Code will open to edit files
+
+# If you delete the container, image, and volume you can just restart
+## Hit ctrl-shift-p and type 'open folder in container'
+## Navigate to the project directory and select okay
+### This will start the container and VS Code will open to edit files
+## You have to reset ruby, but the gem configuration files already manage this
+### > bundle install
+### > bundle update
+### > bundle exec jekyll server --livereload
+
+# Add a devcontainer.json file
+## Create the directory '.devcontainer'
+## In that folder create the 'devcontainer.json' files
+### The following file contents will start a new container and run the gem update commands
+### You can update the forwardPorts if you need a different port number for the web server
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/docker-existing-dockerfile
+{
+	"name": "Existing Dockerfile",
+	// Sets the run context to one level up instead of the .devcontainer folder.
+	"context": "..",
+
+	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+	"dockerFile": "../dockerfile",
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Uncomment the next line to run commands after the container is created - for example installing curl.
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	"postCreateCommand": "bundle install && bundle update",
+
+	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
+	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
+	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
+	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}

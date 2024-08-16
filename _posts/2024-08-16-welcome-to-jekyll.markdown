@@ -1,25 +1,18 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to OT Lighthouse!"
 date:   2024-08-16 00:16:10 +0000
-categories: jekyll update
+categories: OT Lighthouse update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+There is actually nothing to see here. But, here is some information about the project.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+OT Lighthouse is a project to help ICS / OT administrators with hardware / software asset management, vulnerability assessment, information gathering, regulatory compliance, and system hardening. The focus of this project is to address standalone workstations, servers, and smaller ICS / OT deployments. The code and capabilities provided in this project are developed using community input, administrative implementation, and information gathering during cybersecurity assessments.
 
-Jekyll also offers powerful support for code snippets:
+The origins of this project are based on the following projects. OT Lighthouse is intended to centralize these disparate efforts.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+You can find the source code for Minima at GitHub:
+* [Configuration Hardening Assessment PowerShell Script (CHAPS)][https://github.com/cutaway-security/chaps]
+* [Stand-Alone Windows Hardening (SAWH)](https://github.com/cutaway-security/sawh)
+* [NERC CIP Assessment Scripts (NCAS)](https://github.com/cutaway-security/NCAS)
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+You can other open source efforts for the ICS / OT community at the [Cutaway Security GitHub](https://github.com/cutaway-security).
