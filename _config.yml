@@ -16,7 +16,7 @@
 title: OT Lighthouse
 email: dev@cutawaysecurity.com
 description: >- # this means to ignore newlines until "baseurl:"
-    OT Lighthouse is a project to help ICS / OT administrators with hardware / software asset management, vulnerability assessment, information gathering, regulatory compliance, and system hardening. The focus of this project is to address standalone workstations, servers, and smaller ICS / OT deployments.
+    OT Lighthouse helping ICS / OT teams with open source tools for administration and cybersecurity.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://otlighthouse" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cutaway-security
