@@ -9,7 +9,7 @@ OT Lighthouse is a project to help ICS / OT administrators with hardware / softw
 The origins of this project are based on the following projects. OT Lighthouse is intended to centralize these disparate efforts.
 
 You can find the source code for Minima at GitHub:
-* [Configuration Hardening Assessment PowerShell Script (CHAPS)][https://github.com/cutaway-security/chaps]
+* [Configuration Hardening Assessment PowerShell Script (CHAPS)](https://github.com/cutaway-security/chaps)
 * [Stand-Alone Windows Hardening (SAWH)](https://github.com/cutaway-security/sawh)
 * [NERC CIP Assessment Scripts (NCAS)](https://github.com/cutaway-security/NCAS)
 
