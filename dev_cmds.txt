@@ -1,0 +1,29 @@
+# Notes file to remember what commands are used to get development started
+
+# Set up docker by creating a dockerfile with similar contents provided here
+# Start using contain by running the command in VS Code using 'Crtl-shift-P'
+## open folder in container
+### This will have you select a folder. Select the one with the dockerfile
+### You will then be prompted to select local or remote. Select 'predefined configuration definition'
+### You will then be prompted again, select 'From dockerfile'
+### Check Docker Desktop and you should be running a new image and a running container. This should have a volumn for 'vscode'.
+
+# Getting jekyll running
+## Open terminal using Ctrl-` . This terminal should be open in the docker container. Check for 'workspaces' in the prompt.
+## Next, initialize and start the jekyll website
+### > bundle init
+#### Dependencies found here: https://pages.github.com/versions/
+### > bundle add jekyll --version "~>3.10.0"
+### > bundle exec jekyll new --force --skip-bundle . 
+#### Adds jekyll files to current directory
+### > bundle add webrick
+### > bundle install
+### > bundle update
+#### check for errors from the last two commands
+### > bundle exec jekyll serve --live reload
+#### This starts the site to connect using browser and also has the site do live updates for any changes. ctrl-c stops web server
+
+# Update jekyll site for your domain
+## Edit the '_config.yml' file and update the 'baseurl' and 'url' variables
+### baseurl='<project_name>'
+### url='https://otlighthouse'
