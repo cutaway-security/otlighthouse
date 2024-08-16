@@ -26,8 +26,8 @@ github_username:  cutaway-security
 # Build settings
 markdown: kramdown
 #theme: minima
-#remote_theme: pages-themes/tactile@v0.2.0
-remote_theme: https://github.com/pages-themes/tactile
+remote_theme: pages-themes/tactile@v0.2.0
+#remote_theme: https://github.com/pages-themes/tactile
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
