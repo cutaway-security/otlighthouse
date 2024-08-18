@@ -12,7 +12,7 @@
 
 theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -26,7 +26,7 @@ url                      : "https://otlighthouse.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cutaway-security/otlighthouse"
 teaser                   : "/assets/images/otlighthouse_logo_0_circle_500x500.png"
-logo                     : "/assets/images//assets/images/otlighthouse_logo_0_circle_88x88.png"
+logo                     : "/assets/images/otlighthouse_logo_0_circle_88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -119,6 +119,9 @@ author:
   location         : "Texas, USA"
   email            : "dev@cutawaysecurity.com"
   links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cutaway-security/otlighthouse"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
