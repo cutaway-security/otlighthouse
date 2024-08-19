@@ -7,7 +7,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/otlighthouse_banner_0.png
   actions:
-    - label: "<i class='fas fa-download'></i> Donwload now"
+    - label: "<i class='fas fa-download'></i> Download now"
       url: "https://github.com/cutaway-security/otlighthouse"
 excerpt: >
   OT Lighthouse is a project to help ICS / OT administrators and cybersecurity teams.<br />
